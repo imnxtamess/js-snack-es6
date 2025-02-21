@@ -99,3 +99,17 @@ console.log(footballTeams);
 
 // creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 
+
+
+const namePlusPens = [
+  footballTeams[0]['name'],
+  footballTeams[0]['received-penalties'],
+  footballTeams[1]['name'],
+  footballTeams[1]['received-penalties'],
+  footballTeams[2]['name'],
+  footballTeams[2]['received-penalties'],
+  footballTeams[3]['name'],
+  footballTeams[3]['received-penalties'],
+]
+
+console.log(namePlusPens);
