@@ -6,11 +6,36 @@ Stampare a schermo la bici con peso minore.
 
 
 
+const bikes = [
+  {
+    name: 'rossa',
+    weight: '3'
+  },
+  {
+    name: 'verde',
+    weight: '4'
+  },
+  {
+    name: 'blu',
+    weight: '1'
+  },
+  {
+    name: 'nera',
+    weight: '2'
+  },
+  {
+    name: 'gialla',
+    weight: '3'
+  },
+]
 
+const bikeWeights = []
 
-
-
-
+for (let i = 0; i < bikes.length; i++) {
+  thisBike = bikes[i];
+  const bikeWeight = thisBike['weight']
+  bikeWeights.push(bikeWeight)
+}
 
 
 
