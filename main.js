@@ -6,23 +6,23 @@ Stampare a schermo la bici con peso minore.
 const bikes = [
   {
     name: 'rossa',
-    weight: '3'
+    weight: 3
   },
   {
     name: 'verde',
-    weight: '4'
+    weight: 4
   },
   {
     name: 'blu',
-    weight: '1'
+    weight: 1
   },
   {
     name: 'nera',
-    weight: '2'
+    weight: 2
   },
   {
     name: 'gialla',
-    weight: '3'
+    weight: 3
   },
 ]
 
@@ -63,23 +63,23 @@ Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subit
 const footballTeams = [
   {
     name: 'Squadra Blu',
-    'scored-points': '0',
-    'received-penalties': '0',
+    'scored-points': 0,
+    'received-penalties': 0,
   },
   {
     name: 'Squadra Rossa',
-    'scored-points': '0',
-    'received-penalties': '0',
+    'scored-points': 0,
+    'received-penalties': 0,
   },
   {
     name: 'Squadra Gialla',
-    'scored-points': '0',
-    'received-penalties': '0',
+    'scored-points': 0,
+    'received-penalties': 0,
   },
   {
     name: 'Squadra Verde',
-    'scored-points': '0',
-    'received-penalties': '0',
+    'scored-points': 0,
+    'received-penalties': 0,
   }
 ]
 
