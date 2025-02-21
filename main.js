@@ -55,25 +55,43 @@ for (let i = 0; i < bikes.length; i++) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*  Snack2
 Creare un array di oggetti di squadre di calcio.
 Ogni squadra avrà diverse proprietà: nome, punti fatti, falli subiti.
 Nome sarà l’unica proprietà da compilare, le altre saranno tutte settate a 0.
 Generare numeri random al posto degli 0 nelle proprietà “punti” fatti e “falli subiti”.
 Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console. */
+
+const footballTeams = [
+  {
+    name: 'Squadra Blu',
+    'scored-points': '0',
+    'received-penalties': '0',
+  },
+  {
+    name: 'Squadra Rossa',
+    'scored-points': '0',
+    'received-penalties': '0',
+  },
+  {
+    name: 'Squadra Gialla',
+    'scored-points': '0',
+    'received-penalties': '0',
+  },
+  {
+    name: 'Squadra Verde',
+    'scored-points': '0',
+    'received-penalties': '0',
+  }
+]
+
+// Generare numeri random al posto degli 0 nelle proprietà “punti” fatti e “falli subiti”.
+
+for (let i = 0; i < footballTeams.length; i++) {
+  const thisFbTeam = footballTeams[i];
+  let scoredPoints = thisFbTeam['scored-points'];
+  scoredPoints = Math.floor(Math.random() * 11);
+  let penaltiesReceived = thisFbTeam['received-penalties'];
+  penaltiesReceived = Math.floor(Math.random() * 11);
+  console.log(penaltiesReceived, scoredPoints);
+}
