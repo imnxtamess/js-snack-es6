@@ -3,9 +3,6 @@ Creare un array di oggetti: Ogni oggetto descriverà una bici da corsa con le se
 Stampare a schermo la bici con peso minore.
 */
 
-
-
-
 const bikes = [
   {
     name: 'rossa',
@@ -36,6 +33,19 @@ for (let i = 0; i < bikes.length; i++) {
   const bikeWeight = thisBike['weight']
   bikeWeights.push(bikeWeight)
 }
+
+
+const lowestWeight = Math.min(...bikeWeights)
+
+for (let i = 0; i < bikes.length; i++) {
+  thisBike = bikes[i];
+  if (lowestWeight == thisBike['weight']) {
+    console.log(thisBike);
+  }
+}
+
+
+
 
 
 
