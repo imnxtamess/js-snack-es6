@@ -28,6 +28,8 @@ const bikes = [
 
 const bikeWeights = []
 
+// This loop pushes the weight property of each object in the bikes array 
+
 for (let i = 0; i < bikes.length; i++) {
   thisBike = bikes[i];
   const bikeWeight = thisBike['weight']
@@ -35,7 +37,11 @@ for (let i = 0; i < bikes.length; i++) {
 }
 
 
+// Math.min finds the lowest value between the parenthesis // The "..." in the parenthesis is the spread syntax which makes the math method read the values in the array separately
+
 const lowestWeight = Math.min(...bikeWeights)
+
+// This loop compares the lowest weight to each weight of the bikes array and prints in the console the object with the lowest weight
 
 for (let i = 0; i < bikes.length; i++) {
   thisBike = bikes[i];
